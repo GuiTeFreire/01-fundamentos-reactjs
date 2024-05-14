@@ -51,6 +51,7 @@ export function App() {
           {posts.map(post => {
             return (
             <Post
+              key={post.id}
               author={post.author}
               name={post.author.name}
               role={post.author.role}
